@@ -1,0 +1,499 @@
+body{
+   background: black;
+   font-size: 62.5%;
+
+}
+
+main{
+   background-color: #a81313;
+}
+
+h1{
+   margin-top: 0.1%;
+   padding-top: 40px;
+}
+.imagenfondonav{
+  
+   background-image: url("../img/barrra.jpg");
+   height: 100px;
+   background-size: contain;
+   background-repeat: no-repeat;
+   background-position-y: center;
+   background-position-x: center;
+   
+   
+}
+
+
+.contenedorprincipal {
+   display: flex;
+   height: 100px;
+   align-items: center;
+   border-bottom: solid white;
+   border-bottom-width: thin;
+   margin-left: 20px;
+   margin-right: 20px;
+
+   
+}
+
+.contenedorprincipal .lista {
+   display: flex;
+   list-style: none;
+   align-items: center;
+}
+
+.contenedorprincipal .lista img{
+   width: 80px;
+   height: 40px;
+}
+
+.lista
+{
+   margin-left: 10px;
+}
+
+.contenedorprincipal .lista li a {
+   color: white;
+   margin: 10px;
+   text-decoration: none;
+   font-size: large;
+}
+
+.buscar {
+   margin-left: auto;
+   display: flex;
+   padding: 84px;
+}
+
+.buscar input {
+   width: 0px;
+   height: 40px;
+   padding: 0 20px;
+   font-size: 18px;
+   color: #000;
+   outline: none;
+   border: 1px solid silver;
+   border-radius: 30px;
+   transition: all 0.6s ease;
+}
+
+.btnbusqueda {
+   display: flex;
+   position: absolute;
+   top: 24px;
+   margin-right: 102px;
+   justify-content: center;
+   right: 0;
+   background: green;
+   width: 55px;
+   height: 55px;
+   line-height: 55px;
+   text-align: center;
+   color: white;
+   font-size: 20px;
+   border-radius: 50%;
+   cursor: pointer;
+}
+
+.btnbusqueda i {
+
+   display: flex;
+   align-items: center;
+
+}
+
+.buscar:hover input {
+
+   width: 240px;
+}
+
+.buscar input:focus {
+
+   width: 240px;
+
+}
+
+.lista img {
+   width: 60px;
+   height: 38px;
+   justify-content: center;
+
+}
+
+h1
+{
+    font-family: 'Erica One', cursive;
+    color: white;
+    font-size:2.5rem;
+    font-weight: 500;
+    text-align: center;
+    line-height: 1.2;
+}
+
+.container{
+   display: flex;
+   color: white;
+   justify-content: center;
+
+}
+
+.btnbody{
+   height: 60px;
+   width: 160px;
+   color: rgb(255, 193, 7);
+   opacity: 1;
+   border:solid #6c757d 0.5px;
+   margin: 5px;
+   font-size: x-large;
+   border-radius: 0.5rem;
+   background: black;
+   cursor: pointer;
+   transition-duration: 0.4s;
+
+}
+
+.btnbody:hover{
+   background-color: #6c757d;
+}
+
+
+.carousel{
+   width: 100%;
+   margin: 0px 0px;
+   padding: 80px;
+   justify-content: center;
+}
+
+@media(min-width:768px) {
+   .carousel{
+       margin: 0px 0px;
+
+   }
+}
+
+
+
+.carrusel-list{
+   position: relative;
+   display: flex;
+   align-items: center;
+   width: fit-content;
+   height: 304px;
+   padding: 10px 0px;
+   margin: 0px auto;
+   max-width: 90vw;
+   overflow: hidden;
+}
+
+.carrusel-track{
+   position: relative;
+   top: 0;
+   left: 0;
+   display: flex;
+   justify-content: center;
+   transition: .5s ease-in-out;
+}
+
+.carrusel{
+   position: relative;
+   width: 210px;
+   padding: 0 18px;
+   float: left;
+   box-sizing: border-box;
+   display: flex;
+   height: 100%;
+}
+
+
+
+.carrusel a img{
+   object-fit: cover;
+   height: 320px;
+   width: 250px;
+   border-radius: 15px;
+   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.5);
+   transition: .3s ease-in-out;
+}
+
+@media(min-width:768px) {
+   .carrusel{
+       width: 275px;
+   }
+
+   .carrusel a img{
+       width: 250px;
+   }
+}
+
+.carrusel-arrow{
+   border-radius: 30px;
+   background-color: black;
+   position: absolute;
+   z-index: 4;
+   width: 48px;
+   height: 48px;
+   text-align: center;
+   border: 0;
+   cursor: pointer;
+}
+
+.carrusel-arrow:focus{
+   outline: 0;
+}
+
+.carrusel-arrow svg{
+   width: 10px;
+   height: 100%;
+   color: white;
+}
+
+.carrusel-prev{
+   left: 18px;
+}
+
+.carrusel-next{
+   right: 0px;
+}
+
+.container3{
+   display: flex;
+   
+}
+
+.container-card{
+	width: 100%;
+	display: flex;
+	max-width: 1100px;
+	margin: auto;
+}
+
+.card{
+	width: 100%;
+	margin: 20px;
+	border-radius: 6px;
+	overflow: hidden;
+	background: rgb(25, 39, 128);
+	transition: all 400ms ease-out;
+	cursor: default;
+}
+.card:hover{
+	box-shadow: 5px 5px 20px rgba(0,0,0,0.4);
+	transform: translateY(-3%);
+}
+.card img{
+	width: 100%;
+	height: 210px;
+}
+.card .contenido-card{
+	padding: 15px;
+	text-align: center;
+}
+.card .contenido-card h3{
+	margin-bottom: 15px;
+	color: gold;
+   font-size: x-large;
+}
+.card .contenido-card p{
+	line-height: 1.8;
+	color: gold;
+	font-size: large;
+	margin-bottom: 5px;
+}
+.card .contenido-card a{
+	display: inline-block;
+	padding: 10px;
+	margin-top: 10px;
+	text-decoration: none;
+	color: white;
+	border: 1px solid white;
+	border-radius: 4px;
+	transition: all 400ms ease;
+	margin-bottom: 5px;
+   height: 40px;
+   width: 60px;
+   font-size: 20px;
+}
+.card .contenido-card a:hover{
+	background: black;
+	color: #fff;
+}
+@media only screen and (min-width:320px) and (max-width:768px){
+	.container-card{
+		flex-wrap: wrap;
+	}
+	.card{
+		margin: 15px;
+	}
+}
+
+
+.containerpie{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   border-top: solid white;
+   border-width: thin;
+   height: 120px;
+   margin-left: 20px;
+   margin-right: 20px;
+}
+
+
+.pie img{
+   
+   width: 80px;
+   height: 40px;
+}
+
+.containerlogos{
+   display: flex;
+}
+
+.containerlogos .listalogos
+{
+   display: flex;
+}
+
+.copy p {
+   color: white;
+   font-size: large;
+}
+
+.listalogos img{
+      height: 40px;
+}
+
+.netflix{
+   display: flex;
+   border: solid white;
+   height: 150px;
+   margin: 10px;
+   border-radius: 10px;
+   background-image: url(../img/netflix.png);
+   background-repeat: no-repeat;
+   background-size: contain;
+   transition: all 400ms ease-out;
+   margin-top: 20px;
+   justify-content: center;
+   align-items: center;
+}
+
+.netflixbarra img{
+   height: 140px;
+   width: 200px;
+
+}
+
+.netflix:hover{
+   transform: translateY(-3%);
+   box-shadow: 5px 5px 20px rgba(255, 255, 255, 0.4);
+}
+
+.amazon{
+   display: flex;
+   border: solid white;
+   border-radius: 10px;
+   height: 150px;
+   margin: 10px;
+   background-image: url(../img/primevideobarra.png);
+   background-repeat: no-repeat;
+   background-size: contain;
+   transition: all 400ms ease-out;
+   margin-top: 30px;
+   justify-content: center;
+   align-items: center;
+}
+
+.amazonprimebarra img{
+   height: 140px;
+   width: 200px;
+
+}
+
+
+.amazon:hover{
+   transform: translateY(-3%);
+   box-shadow: 5px 5px 20px rgba(255, 255, 255, 0.4);
+}
+
+
+.paramount{
+   display: flex;
+   border: solid white;
+   border-radius: 10px;
+   height: 150px;
+   margin: 10px;
+   background-image: url(../img/paramount.png);
+   background-repeat: no-repeat;
+   background-size: contain;
+   transition: all 400ms ease-out;
+   margin-top: 30px;
+   justify-content: center;
+   align-items: center;
+}
+
+.paramountbarra img{
+   height: 140px;
+   width: 200px;
+
+}
+
+.paramount:hover{
+   transform: translateY(-3%);
+   box-shadow: 5px 5px 20px rgba(255, 255, 255, 0.4);
+}
+
+.hbo{
+   display: flex;
+   border: solid white;
+   border-radius: 10px;
+   height: 150px;
+   margin: 10px;
+   background-image: url(../img/hbo3.png);
+   background-repeat: no-repeat;
+   background-size: contain;
+   transition: all 400ms ease-out;
+   margin-top: 30px;
+   justify-content: center;
+   align-items: center;
+}
+
+.hbobarra img{
+   height: 140px;
+   width: 200px;
+}
+
+.hbo:hover{
+   transform: translateY(-3%);
+   box-shadow: 5px 5px 20px rgba(255, 255, 255, 0.4);
+}
+
+.disney{
+   display: flex;
+   border: solid white;
+   border-radius: 10px;
+   height: 150px;
+   margin: 10px;
+   background-image: url(../img/disney.png);
+   background-repeat: no-repeat;
+   background-size: contain;
+   transition: all 400ms ease-out;
+   margin-top: 30px;
+   justify-content: center;
+   align-items: center;
+}
+
+.disneybarra img{
+   height: 140px;
+   width: 200px;
+}
+
+.disney:hover{
+   transform: translateY(-3%);
+   box-shadow: 5px 5px 20px rgba(255, 255, 255, 0.4);
+}
+
+.trailers{
+   display: flex;
+}
